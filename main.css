@@ -1,0 +1,19 @@
+body {
+  background-color: black;
+  text-align: center;
+}
+
+#clock {
+  font-family: Trattatello, fantasy;
+  color: white;
+  font-size: 100px;
+  
+  padding-top: 200px;
+  /* padding-bottom: 40px; */
+}
+
+#hexCode {
+    color: white;
+    font-size:50px;
+    font-family: Marker Felt, fantasy;
+} 
