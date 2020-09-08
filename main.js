@@ -1,15 +1,10 @@
 function currentTime() {
-  let date = new Date(); /* creating object of Date class */
+  let date = new Date();
   let hour = date.getHours();
   let min = date.getMinutes();
   let sec = date.getSeconds();
 
-  hour =
-    hour == 0
-      ? 12
-      : hour > 12
-      ? hour - 12
-      : hour; /* assigning hour in 12-hour format */
+  hour = hour == 0 ? 12 : hour > 12 ? hour - 12 : hour;
   hour = updateTime(hour);
   min = updateTime(min);
   sec = updateTime(sec);
@@ -20,11 +15,10 @@ function currentTime() {
   document.getElementById("hexCode").innerHTML = hexTime;
   document.body.style.backgroundColor = hexTime;
 
-  let t = setInterval(currentTime, 1000); /* setting timer */
+  let t = setInterval(currentTime, 1000);
 }
 
 function updateTime(x) {
-  /* appending 0 before time elements if less than 10 */
   if (x < 10) {
     return "0" + x;
   } else {
